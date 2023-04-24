@@ -1,0 +1,104 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+#words-container {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+#game {
+    margin: auto;
+    max-width: 500px;
+
+}
+
+#hangman-container {
+    position: relative;
+    margin-left: 2em;
+}
+
+.retry-button {
+    position: relative;
+    top: 300px;
+    left: 30%;
+    background-color: red; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove button border */
+    padding: 10px 16px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove text underline */
+    display: inline-block; /* Set display type to inline block */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 4px; /* Add border radius */
+}
+  
+.retry-button:hover {
+    background-color: darkred; /* Darken background color on hover */
+}
+
+#lives {
+    color: red;
+    position: relative;
+}
+
+#wrong-letters {
+    letter-spacing: 0.2em
+}
+
+#secret-word span {
+    padding: 4px;
+}
+
+#hangman-container img {
+    position: absolute;
+}
+
+#hangman-1 {
+    display: none;
+}
+ 
+#hangman-2 {
+    display: none;
+}
+ 
+#hangman-3 {
+    display: none;
+    left: 172px;
+}
+ 
+#hangman-4 {
+    display: none;
+    left: 145px;
+    top: 45px;
+}
+ 
+#hangman-5 {
+    display: none;
+    top: 102px;
+    left: 172px;
+}
+ 
+#hangman-6 {
+    display: none;
+    top: 120px;
+    left: 142px;
+}
+ 
+#hangman-7 {
+    display: none;
+    top: 120px;
+    left: 177px;
+}
+ 
+#hangman-8 {
+    display: none;
+    top: 180px;
+    left: 142px;
+}
+ 
+#hangman-9 {
+    display: none;
+    top: 45px;
+    left: 142px;
+}
