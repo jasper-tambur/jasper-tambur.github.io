@@ -68,5 +68,18 @@ document.addEventListener('keydown', (e) => {
                 let stickDiv = document.getElementById("hangman-9");
                 stickDiv.style.display = "block";
         }
+        } else {
+            let isWordComplete = true;
+            for (let i = 0; i < secretWord.length; i++) {
+                const charSpan = document.getElementById('char-' + i);
+                if (charSpan.innerText == '_ ') {
+                    isWordComplete = false;
+                    break;
+                }
+            }
+            if (isWordComplete) {
+                secretWordDiv.innerHTML = secretWord.toUpperCase();
+                livesDiv.innerHTML = 'SINA VÕITSID!';
+            } 
     }
 });
